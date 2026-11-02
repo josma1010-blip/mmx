@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catálogo de eSIM y chips | {store}</title>
+<meta name="description" content="Catálogo de eSIM y chips físicos Telcel, Bait y otras compañías con filtros por compañía, tipo y precio.">
+<meta name="theme-color" content="#0A4EA3">
+<meta property="og:type" content="website"><meta property="og:title" content="Catálogo de eSIM y chips | eSIM y Chips México"><meta property="og:description" content="Catálogo de eSIM y chips físicos Telcel, Bait y otras compañías con filtros por compañía, tipo y precio."><meta property="og:image" content="assets/img/og.png">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon.png" type="image/png" sizes="64x64">
+<link rel="apple-touch-icon" href="assets/img/favicon.png">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script src="assets/js/app.js" defer></script><script src="assets/js/catalog.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+<div class="topbar"><div class="container"><span>📶 Entrega digital de eSIM tras confirmar tu pago · Envíos a todo México</span><span><a data-contact-phone href="#">&nbsp;</a> · <a data-contact-email href="#">&nbsp;</a></span></div></div>
+<header class="header"><div class="container">
+<a class="brand" href="index.html"><img src="assets/img/logo.svg" alt="" width="38" height="38"><span><span data-store-name>Tienda eSIM</span><small data-store-tagline>eSIM y chips para México</small></span></a>
+<button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">☰</button>
+<nav class="nav" id="nav" aria-label="Principal"><a href="index.html">Inicio</a><a href="productos.html" aria-current="page">Catálogo</a><a href="productos.html?type=esim">eSIM</a><a href="productos.html?type=fisico">Chips</a><a href="contacto.html">Contacto</a><a class="cart-btn" href="carrito.html" aria-label="Carrito de compras">🛒 Carrito <span class="cart-count" data-cart-count>0</span></a></nav>
+</div></header>
+<main id="main">
+
+<div class="page-title"><div class="container"><div class="breadcrumb"><a href="index.html">Inicio</a> › Catálogo</div><h1>Catálogo</h1><p>eSIM y chips físicos para todas las compañías.</p></div></div>
+<section><div class="container catalog">
+<aside class="filters" id="filters" aria-label="Filtros"><form id="filter-form">
+<h2>Filtrar</h2>
+<fieldset><legend>Tipo</legend>
+<label class="chk"><input type="radio" name="type" value="" checked> Todos</label>
+<label class="chk"><input type="radio" name="type" value="esim"> eSIM (digital)</label>
+<label class="chk"><input type="radio" name="type" value="fisico"> Chip físico</label></fieldset>
+<div class="field"><label for="f-category">Categoría</label><select id="f-category" name="category"><option value="">Todas</option></select></div>
+<div class="field"><label for="f-company">Compañía</label><select id="f-company" name="company"><option value="">Todas</option></select></div>
+<fieldset><legend>Precio (MXN)</legend><div class="row2"><div class="field"><label for="f-min" class="sr-only">Mínimo</label><input id="f-min" name="min" type="number" min="0" placeholder="Mín"></div><div class="field"><label for="f-max" class="sr-only">Máximo</label><input id="f-max" name="max" type="number" min="0" placeholder="Máx"></div></div></fieldset>
+<label class="chk"><input type="checkbox" name="available" value="1"> Solo disponibles</label>
+<div style="display:flex;gap:.5rem;margin-top:1rem"><button class="btn btn-primary btn-sm" type="submit">Aplicar</button><button class="btn btn-ghost btn-sm" type="reset">Limpiar</button></div>
+</form></aside>
+<div>
+<div class="toolbar">
+<div class="search"><label for="q" class="sr-only">Buscar</label><input id="q" type="search" placeholder="Buscar eSIM, chip, compañía…" autocomplete="off"></div>
+<button class="btn btn-outline btn-sm filter-toggle" type="button" aria-controls="filters" aria-expanded="false">⚙️ Filtros</button>
+<label for="sort" class="sr-only">Ordenar</label><select id="sort" style="width:auto"><option value="">Destacados</option><option value="precio_asc">Precio: menor a mayor</option><option value="precio_desc">Precio: mayor a menor</option><option value="nombre">Nombre A-Z</option><option value="nuevos">Más nuevos</option></select>
+</div>
+<p class="hint" id="result-count" aria-live="polite"></p>
+<div class="grid" id="grid"><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div></div>
+<div class="pagination" id="pagination"></div>
+</div></div></section>
+</main>
+<footer class="footer"><div class="container">
+<div class="cols">
+<div><h3 data-store-name>Tienda eSIM</h3><p data-about></p></div>
+<div><h3>Tienda</h3><ul><li><a href="productos.html">Catálogo completo</a></li><li><a href="productos.html?category=esim-telcel-prepago">eSIM Telcel Prepago</a></li><li><a href="productos.html?category=chips-telcel">Chips Telcel</a></li><li><a href="productos.html?category=chips-bait">Chips Bait</a></li><li><a href="productos.html?category=esim-otras">eSIM otras compañías</a></li></ul></div>
+<div><h3>Ayuda</h3><ul><li><a href="index.html#como-funciona">¿Cómo funciona?</a></li><li><a href="contacto.html">Contacto</a></li><li><a href="carrito.html">Mi carrito</a></li></ul></div>
+<div><h3>Contacto</h3><ul><li><a data-contact-email href="#">&nbsp;</a></li><li><a data-contact-phone href="#">&nbsp;</a></li><li data-contact-address></li></ul></div>
+</div>
+<div class="legal"><p class="disclaimer" data-disclaimer>Distribuidor independiente. No afiliado a Telcel ni a otras compañías mencionadas.</p><p>© <span data-year></span> <span data-store-name></span></p></div>
+</div></footer>
+<a class="wa-float" data-whatsapp href="#" hidden target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">💬</a>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="eSIM + Recarga Incluye saldo">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0A4EA3"/><stop offset="1" stop-color="#2FA4E7"/></linearGradient></defs>
+<rect width="400" height="300" fill="#EEF4FC"/><circle cx="330" cy="40" r="90" fill="#0A4EA3" opacity=".08"/><circle cx="60" cy="270" r="80" fill="#2FA4E7" opacity=".1"/>
+<rect x="120" y="30" width="160" height="240" rx="26" fill="#0F1B2D"/><rect x="128" y="40" width="144" height="220" rx="18" fill="url(#g)"/>
+<rect x="180" y="46" width="40" height="6" rx="3" fill="#0F1B2D"/>
+<rect x="150" y="80" width="100" height="100" rx="10" fill="#fff"/>
+<g fill="#0F1B2D"><rect x="160" y="90" width="24" height="24"/><rect x="216" y="90" width="24" height="24"/><rect x="160" y="146" width="24" height="24"/>
+<rect x="166" y="96" width="12" height="12" fill="#fff"/><rect x="222" y="96" width="12" height="12" fill="#fff"/><rect x="166" y="152" width="12" height="12" fill="#fff"/>
+<rect x="192" y="92" width="8" height="8"/><rect x="204" y="104" width="8" height="8"/><rect x="192" y="120" width="8" height="8"/><rect x="212" y="124" width="8" height="8"/><rect x="228" y="132" width="8" height="8"/><rect x="196" y="140" width="8" height="8"/><rect x="216" y="150" width="8" height="8"/><rect x="232" y="160" width="8" height="8"/><rect x="200" y="160" width="8" height="8"/><rect x="164" y="124" width="8" height="8"/><rect x="176" y="132" width="8" height="8"/></g>
+<text x="200" y="210" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700" fill="#fff">eSIM + Recarga</text>
+<text x="200" y="236" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#fff" opacity=".9">Incluye saldo</text>
+<rect x="290" y="200" width="86" height="30" rx="15" fill="#E4002B"/><text x="333" y="220" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#fff">eSIM</text>
+</svg>

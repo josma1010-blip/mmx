@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Finalizar compra | {store}</title>
+<meta name="description" content="Captura tus datos y elige método de pago.">
+<meta name="theme-color" content="#0A4EA3">
+<meta property="og:type" content="website"><meta property="og:title" content="Finalizar compra | eSIM y Chips México"><meta property="og:description" content="Captura tus datos y elige método de pago."><meta property="og:image" content="assets/img/og.png">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon.png" type="image/png" sizes="64x64">
+<link rel="apple-touch-icon" href="assets/img/favicon.png">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script src="assets/js/app.js" defer></script><script src="assets/js/checkout.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+<div class="topbar"><div class="container"><span>📶 Entrega digital de eSIM tras confirmar tu pago · Envíos a todo México</span><span><a data-contact-phone href="#">&nbsp;</a> · <a data-contact-email href="#">&nbsp;</a></span></div></div>
+<header class="header"><div class="container">
+<a class="brand" href="index.html"><img src="assets/img/logo.svg" alt="" width="38" height="38"><span><span data-store-name>Tienda eSIM</span><small data-store-tagline>eSIM y chips para México</small></span></a>
+<button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">☰</button>
+<nav class="nav" id="nav" aria-label="Principal"><a href="index.html">Inicio</a><a href="productos.html">Catálogo</a><a href="productos.html?type=esim">eSIM</a><a href="productos.html?type=fisico">Chips</a><a href="contacto.html">Contacto</a><a class="cart-btn" href="carrito.html" aria-label="Carrito de compras">🛒 Carrito <span class="cart-count" data-cart-count>0</span></a></nav>
+</div></header>
+<main id="main">
+
+<div class="page-title"><div class="container"><h1>Finalizar compra</h1><p>Tus datos están protegidos. Precios verificados por el servidor.</p></div></div>
+<section><div class="container two-col">
+<form class="panel" id="checkout-form" novalidate>
+<div id="co-alert"></div>
+<h2>1. Tus datos</h2>
+<div class="field"><label for="name">Nombre completo *</label><input id="name" name="name" required minlength="3" maxlength="150" autocomplete="name"></div>
+<div class="row2"><div class="field"><label for="email">Correo electrónico *</label><input id="email" name="email" type="email" required maxlength="190" autocomplete="email"><span class="hint">Aquí recibirás tu eSIM y confirmación.</span></div>
+<div class="field"><label for="phone">Teléfono (10 dígitos) *</label><input id="phone" name="phone" type="tel" required inputmode="numeric" pattern="[0-9 +()-]{10,18}" maxlength="18" autocomplete="tel"></div></div>
+<div id="address-block" hidden>
+<h2 style="margin-top:1rem">2. Dirección de envío</h2><p class="hint">Requerida porque tu pedido incluye chips físicos.</p>
+<div class="row3"><div class="field"><label for="street">Calle *</label><input id="street" name="street" maxlength="200" autocomplete="address-line1"></div>
+<div class="field"><label for="ext_number">Núm. ext. *</label><input id="ext_number" name="ext_number" maxlength="30"></div>
+<div class="field"><label for="int_number">Núm. int.</label><input id="int_number" name="int_number" maxlength="30"></div></div>
+<div class="row2"><div class="field"><label for="neighborhood">Colonia *</label><input id="neighborhood" name="neighborhood" maxlength="120"></div>
+<div class="field"><label for="zip">Código postal *</label><input id="zip" name="zip" inputmode="numeric" maxlength="5" pattern="[0-9]{5}" autocomplete="postal-code"></div></div>
+<div class="row2"><div class="field"><label for="city">Ciudad / Municipio *</label><input id="city" name="city" maxlength="120" autocomplete="address-level2"></div>
+<div class="field"><label for="state">Estado *</label><select id="state" name="state" autocomplete="address-level1"><option value="">Selecciona…</option></select></div></div>
+<div class="field"><label for="references">Referencias</label><input id="references" name="references" maxlength="255" placeholder="Entre calles, color de fachada…"></div>
+</div>
+<h2 style="margin-top:1rem"><span id="pay-num">2</span>. Método de pago</h2>
+<div id="pay-methods" class="field"></div>
+<div class="field"><label for="notes">Notas del pedido (opcional)</label><textarea id="notes" name="notes" rows="2" maxlength="500"></textarea></div>
+<label class="chk" style="display:flex;gap:.5rem;align-items:flex-start;margin:.4rem 0 1rem"><input type="checkbox" id="terms" required> <span class="hint">Confirmo que mi equipo es compatible con eSIM (si aplica) y acepto que las eSIM son productos digitales de un solo uso.</span></label>
+<button class="btn btn-red btn-block" type="submit" id="place-order">Confirmar pedido</button>
+</form>
+<aside class="panel summary" aria-label="Resumen del pedido"><h2>Tu pedido</h2><div id="co-items"></div>
+<div class="sum-row"><span>Subtotal</span><span id="c-sub">—</span></div><div class="sum-row"><span>Envío</span><span id="c-ship">—</span></div><div class="sum-row total"><span>Total</span><span id="c-total">—</span></div>
+<p class="hint">🔒 El total final lo calcula el servidor con los precios vigentes.</p></aside>
+</div></section>
+</main>
+<footer class="footer"><div class="container">
+<div class="cols">
+<div><h3 data-store-name>Tienda eSIM</h3><p data-about></p></div>
+<div><h3>Tienda</h3><ul><li><a href="productos.html">Catálogo completo</a></li><li><a href="productos.html?category=esim-telcel-prepago">eSIM Telcel Prepago</a></li><li><a href="productos.html?category=chips-telcel">Chips Telcel</a></li><li><a href="productos.html?category=chips-bait">Chips Bait</a></li><li><a href="productos.html?category=esim-otras">eSIM otras compañías</a></li></ul></div>
+<div><h3>Ayuda</h3><ul><li><a href="index.html#como-funciona">¿Cómo funciona?</a></li><li><a href="contacto.html">Contacto</a></li><li><a href="carrito.html">Mi carrito</a></li></ul></div>
+<div><h3>Contacto</h3><ul><li><a data-contact-email href="#">&nbsp;</a></li><li><a data-contact-phone href="#">&nbsp;</a></li><li data-contact-address></li></ul></div>
+</div>
+<div class="legal"><p class="disclaimer" data-disclaimer>Distribuidor independiente. No afiliado a Telcel ni a otras compañías mencionadas.</p><p>© <span data-year></span> <span data-store-name></span></p></div>
+</div></footer>
+<a class="wa-float" data-whatsapp href="#" hidden target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">💬</a>
+</body>
+</html>

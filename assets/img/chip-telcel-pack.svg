@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Pack Chips Telcel x3">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0A4EA3"/><stop offset="1" stop-color="#2FA4E7"/></linearGradient></defs>
+<rect width="400" height="300" fill="#EEF4FC"/><circle cx="340" cy="260" r="100" fill="#0A4EA3" opacity=".08"/>
+<g transform="translate(36,-28)"><path d="M95 60 h170 l40 40 v150 a12 12 0 0 1 -12 12 h-198 a12 12 0 0 1 -12 -12 v-178 a12 12 0 0 1 12 -12z" fill="url(#g)" stroke="#fff" stroke-width="3"/>
+<rect x="125" y="110" width="90" height="70" rx="10" fill="#E9C46A"/><g stroke="#B98B1E" stroke-width="3" fill="none"><path d="M125 133h30M185 133h30M125 157h30M185 157h30M155 110v70M185 110v70"/></g></g><g transform="translate(18,-14)"><path d="M95 60 h170 l40 40 v150 a12 12 0 0 1 -12 12 h-198 a12 12 0 0 1 -12 -12 v-178 a12 12 0 0 1 12 -12z" fill="url(#g)" stroke="#fff" stroke-width="3"/>
+<rect x="125" y="110" width="90" height="70" rx="10" fill="#E9C46A"/><g stroke="#B98B1E" stroke-width="3" fill="none"><path d="M125 133h30M185 133h30M125 157h30M185 157h30M155 110v70M185 110v70"/></g></g><g transform="translate(0,0)"><path d="M95 60 h170 l40 40 v150 a12 12 0 0 1 -12 12 h-198 a12 12 0 0 1 -12 -12 v-178 a12 12 0 0 1 12 -12z" fill="url(#g)" stroke="#fff" stroke-width="3"/>
+<rect x="125" y="110" width="90" height="70" rx="10" fill="#E9C46A"/><g stroke="#B98B1E" stroke-width="3" fill="none"><path d="M125 133h30M185 133h30M125 157h30M185 157h30M155 110v70M185 110v70"/></g></g>
+<text x="105" y="222" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700" fill="#fff">Pack Chips</text>
+<text x="105" y="246" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#fff" opacity=".9">Telcel x3</text>
+</svg>

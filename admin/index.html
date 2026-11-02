@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Panel de administración</title>
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="admin.css">
+<script src="admin.js" defer></script>
+</head>
+<body>
+<div id="login-view" class="center" hidden>
+  <form class="card login" id="login-form" autocomplete="on">
+    <img src="../assets/img/logo.svg" alt="" width="48" height="48">
+    <h1>Panel de administración</h1>
+    <div id="login-msg"></div>
+    <label>Usuario <input name="username" required autocomplete="username" maxlength="60"></label>
+    <label>Contraseña <input name="password" type="password" required autocomplete="current-password"></label>
+    <button class="btn primary" type="submit">Entrar</button>
+    <p class="muted small">Tras 5 intentos fallidos la cuenta se bloquea 15 minutos.</p>
+  </form>
+</div>
+<div id="pw-view" class="center" hidden>
+  <form class="card login" id="pw-form">
+    <h1>Cambia tu contraseña</h1>
+    <p class="muted" id="pw-why">Por seguridad debes reemplazar la contraseña temporal.</p>
+    <div id="pw-msg"></div>
+    <label>Contraseña actual <input name="current" type="password" required autocomplete="current-password"></label>
+    <label>Nueva contraseña (mín. 10, letras y números) <input name="new" type="password" required minlength="10" autocomplete="new-password"></label>
+    <label>Confirmar nueva <input name="confirm" type="password" required minlength="10" autocomplete="new-password"></label>
+    <button class="btn primary" type="submit">Guardar contraseña</button>
+    <button class="btn ghost" type="button" id="pw-cancel" hidden>Cancelar</button>
+  </form>
+</div>
+<div id="app" hidden>
+  <aside class="side">
+    <div class="brand"><img src="../assets/img/logo.svg" alt="" width="32" height="32"><span id="store-name">Tienda</span></div>
+    <nav id="tabs" aria-label="Secciones">
+      <a href="#dashboard" data-tab="dashboard">📊 Dashboard</a>
+      <a href="#orders" data-tab="orders">🧾 Pedidos</a>
+      <a href="#products" data-tab="products">📦 Productos</a>
+      <a href="#esim" data-tab="esim">📲 Códigos eSIM</a>
+      <a href="#customers" data-tab="customers">👥 Clientes</a>
+      <a href="#messages" data-tab="messages">✉️ Mensajes <span class="badge" id="unread" hidden></span></a>
+      <a href="#settings" data-tab="settings">⚙️ Tienda</a>
+      <a href="#paypal" data-tab="paypal">💳 PayPal</a>
+      <a href="#audit" data-tab="audit">🛡️ Auditoría</a>
+    </nav>
+    <div class="side-foot"><span id="who"></span><button class="btn ghost sm" id="btn-pw">Cambiar contraseña</button><button class="btn ghost sm" id="btn-logout">Salir</button><a class="btn ghost sm" href="../index.html" target="_blank" rel="noopener">Ver tienda ↗</a></div>
+  </aside>
+  <main id="view" class="main" tabindex="-1"></main>
+</div>
+<div id="modal" class="modal" hidden role="dialog" aria-modal="true"><div class="modal-box"><button class="modal-x" aria-label="Cerrar">✕</button><div id="modal-body"></div></div></div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
